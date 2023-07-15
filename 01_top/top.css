@@ -33,7 +33,7 @@ header p{
     align-items: center;
 }
 header p span{
-    font-size: calc(100vh * 20 / 1080);
+    font-size: calc(100vw * 20 / 1920);
 }
 
 header div ul{
@@ -52,7 +52,7 @@ header div ul li{
 header div ul li a{
     text-decoration: none;
     color: black;
-    font-size: calc(100vh * 16 / 1080);
+    font-size: calc(100vw * 16 / 1920);
 }
 
 .main{
@@ -60,13 +60,13 @@ header div ul li a{
     margin: calc(100vh * 290 / 1080) 0 calc(100vh * 255 / 1080);
 }
 .main h2{
-    font-size: calc(100vh * 100 / 1080);
+    font-size: calc(100vw * 100 / 1920);
     height: calc(100vh * 100 / 1080);
     margin: 0;
 }
 .main h1{
     position: relative;
-    font-size: calc(100vh * 350 / 1080);
+    font-size: calc(100vw * 350 / 1920);
     height: calc(100vh * 350 / 1080);
     letter-spacing: calc(100vw * -7 / 1920);
     margin: 0;
@@ -82,7 +82,7 @@ header div ul li a{
     position: relative;
     margin: 0;
     font-family: "Hiragino Mincho ProN", serif;
-    font-size: calc(100vh * 50 / 1080);
+    font-size: calc(100vw * 50 / 1920);
     left: calc(100vw * 100 / 1920);
     font-weight: 100;
 }
@@ -91,7 +91,7 @@ header div ul li a{
     display: flex;
     gap: calc(100vw * 76 / 1920);
     right: calc(100vw * 101 / 1920);
-    font-size: calc(100vh * 20 / 1080);
+    font-size: calc(100vw * 20 / 1920);
     font-weight: 600;
 }
 .main .mini .right{
@@ -107,5 +107,5 @@ footer {
 footer p{
     display: inline;
     margin: 0;
-    font-size: calc(100vh * 30 / 1080);
+    font-size: calc(100vw * 30 / 1920);
 }
