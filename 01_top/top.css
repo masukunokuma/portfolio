@@ -1,3 +1,7 @@
+/* body{
+    width: 1920px;
+    height: 1080px;
+} */
 header{
     display: flex;
     position: relative;
@@ -53,4 +57,59 @@ header div ul li a{
     text-decoration: none;
     color: black;
     font-size: 16px;
+}
+
+.main{
+    position: relative;
+    overflow: hidden;
+    margin: 165px 0 255px;
+}
+.main h2{
+    font-size: 100px;
+    height: 100px;
+    margin: 0;
+}
+.main h1{
+    position: relative;
+    font-size: 350px;
+    height: 350px;
+    margin: 0;
+    font-weight: 900;
+    left: -70px;
+}
+.main .under{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main h3{
+    position: relative;
+    margin: 0;
+    font-family: "Hiragino Mincho ProN", serif;
+    font-size: 50px;
+    left: 100px;
+    font-weight: 100;
+}
+.main .mini{
+    position: relative;
+    display: flex;
+    gap: 76px;
+    right: 101px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.main .mini .right{
+    text-align: end;
+}
+
+footer {
+    position: relative;
+    text-align: end;
+    right: 51px;
+    bottom: 41px;
+}
+footer p{
+    display: inline;
+    margin: 0;
+    font-size: 30px;
 }
