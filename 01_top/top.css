@@ -1,81 +1,78 @@
-/* body{
-    width: 1920px;
-    height: 1080px;
-} */
+body {
+    overflow: hidden;
+}
+
 header{
     display: flex;
-    position: relative;
-    top: 25px;
-    left: 25px;
-    width: 1870px;
-    height: 100px;
+    position: absolute;
+    top: calc(100vh * 25 / 1920);
+    left: calc(100vw * 25 / 1080);
+    width: calc(100vw * 1870 / 1920);
+    height: calc(100vh * 100 / 1080);
 }
 header div{
     display: flex;
 }
 
 header img{
-    width: 100px;
-    height: 100px;
+    width: calc(100vw * 100 / 1920);
+    height: calc(100vh * 100 / 1080);
 }
 
 header p{
     display: grid;
     position: relative;
-    width: 52vw;
-    height: 80px;
+    width: calc(100vw * 1000 / 1920);
+    height: calc(100vh * 80 / 1080);
     margin: 0;
-    top: 10px;
-    margin-left: 25px;
-    border-left: 5px solid black;
-    border-right: 5px solid black;
+    top: calc(100vh * 10 / 1080);
+    margin-left: calc(100vw * 25 / 1920);
+    border-left: calc(100vw * 5 / 1920) solid black;
+    border-right: calc(100vw * 5 / 1920) solid black;
     text-align: center;
     align-items: center;
 }
 header p span{
-    font-size: 20px;
+    font-size: calc(100vh * 20 / 1080);
 }
 
-header div{
-    width: calc(650px / 100vw );
-
-}
 header div ul{
     display: grid;
     align-items: center;
     margin: 0;
-    padding-left: 20px;
-    width: 325px;
+    padding-left: calc(100vw * 20 / 1920);
+    width: calc(100vw * 325 / 1920);
 }
 header div ul li{
     display: contents;
     list-style: none;
     /* align-items: center; */
-    height: 50px;
+    height: calc(100vh * 50 / 1080);
 }
 header div ul li a{
     text-decoration: none;
     color: black;
-    font-size: 16px;
+    font-size: calc(100vh * 16 / 1080);
 }
 
 .main{
     position: relative;
     overflow: hidden;
-    margin: 165px 0 255px;
+    margin: calc(100vh * 290 / 1080) 0 calc(100vh * 255 / 1080);
 }
 .main h2{
-    font-size: 100px;
-    height: 100px;
+    font-size: calc(100vh * 100 / 1080);
+    height: calc(100vh * 100 / 1080);
     margin: 0;
 }
 .main h1{
     position: relative;
-    font-size: 350px;
-    height: 350px;
+    font-size: calc(100vh * 350 / 1080);
+    height: calc(100vh * 350 / 1080);
+    letter-spacing: calc(100vw * -7 / 1920);
     margin: 0;
     font-weight: 900;
-    left: -70px;
+    left: calc(100vw * -70 / 1920);
 }
 .main .under{
     display: flex;
@@ -86,16 +83,16 @@ header div ul li a{
     position: relative;
     margin: 0;
     font-family: "Hiragino Mincho ProN", serif;
-    font-size: 50px;
-    left: 100px;
+    font-size: calc(100vh * 50 / 1080);
+    left: calc(100vw * 100 / 1920);
     font-weight: 100;
 }
 .main .mini{
     position: relative;
     display: flex;
-    gap: 76px;
-    right: 101px;
-    font-size: 20px;
+    gap: calc(100vw * 76 / 1920);
+    right: calc(100vw * 101 / 1920);
+    font-size: calc(100vh * 20 / 1080);
     font-weight: 600;
 }
 .main .mini .right{
@@ -103,13 +100,13 @@ header div ul li a{
 }
 
 footer {
-    position: relative;
+    position: absolute;
     text-align: end;
-    right: 51px;
-    bottom: 41px;
+    right: calc(100vw * 52 / 1920);
+    bottom: calc(100vh * 41 / 1080);
 }
 footer p{
     display: inline;
     margin: 0;
-    font-size: 30px;
+    font-size: calc(100vh * 30 / 1080);
 }
