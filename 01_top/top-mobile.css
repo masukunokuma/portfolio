@@ -1,12 +1,16 @@
+html{
+    height: calc(100vh * 1080 / 1080);
+}
 body {
     overflow: hidden;
+    height: calc(100vh * 1080 / 1080);
 }
 
 header{
     display: flex;
     position: absolute;
-    top: calc(100vh * 25 / 1920);
-    left: calc(100vw * 25 / 1080);
+    top: calc(100vh * 30 / 1920);
+    left: calc(100vw * 15 / 1080);
     width: calc(100vw * 1870 / 1920);
     height: calc(100vh * 100 / 1080);
 }
@@ -14,9 +18,31 @@ header div{
     display: flex;
 }
 
-header img{
+header .headerIcon{
+    display: flex;
     width: calc(100vw * 100 / 1920);
     height: calc(100vh * 100 / 1080);
+    justify-content: center;
+    align-items: center;
+}
+header .headerIcon img{
+    width: calc(100vw * 75 / 1920);
+    height: calc(100vh * 75 / 1080);
+}
+
+#bear{
+    position: absolute;
+    z-index: -999;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    top: calc(100vh * -10 / 375);
+}
+#bear img{
+    width: calc(100vw * 150 / 375);
+    object-fit: cover;
 }
 
 header p{
@@ -57,7 +83,8 @@ header div ul li a{
 
 .main{
     position: relative;
-    margin: calc(100vh * 290 / 1080) 0 calc(100vh * 255 / 1080);
+    /* margin: calc(100vh * 290 / 1080) 0 calc(100vh * 255 / 1080); */
+    margin: calc(100vh * 400 / 1080) 0 calc(100vh * 145 / 1080)
 }
 .main h2{
     font-size: calc(100vw * 100 / 1920);
@@ -66,15 +93,12 @@ header div ul li a{
 }
 .main h1{
     position: relative;
-    overflow: hidden;
     font-size: calc(100vw * 350 / 1920);
     height: calc(100vh * 350 / 1080);
     letter-spacing: calc(100vw * -7 / 1920);
     margin: 0;
     font-weight: 900;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    left: calc(100vw * -70 / 1920);
 }
 .main .under{
     display: flex;
@@ -102,5 +126,13 @@ header div ul li a{
 }
 
 footer {
-    display: none;
+    position: absolute;
+    text-align: end;
+    right: calc(100vw * 52 / 1920);
+    bottom: calc(100vh * 41 / 1080);
+}
+footer p{
+    display: inline;
+    margin: 0;
+    font-size: calc(100vw * 30 / 1920);
 }
