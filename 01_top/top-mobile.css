@@ -66,12 +66,15 @@ header div ul li a{
 }
 .main h1{
     position: relative;
+    overflow: hidden;
     font-size: calc(100vw * 350 / 1920);
     height: calc(100vh * 350 / 1080);
     letter-spacing: calc(100vw * -7 / 1920);
     margin: 0;
     font-weight: 900;
-    left: calc(100vw * -70 / 1920);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .main .under{
     display: flex;
@@ -99,13 +102,5 @@ header div ul li a{
 }
 
 footer {
-    position: absolute;
-    text-align: end;
-    right: calc(100vw * 52 / 1920);
-    bottom: calc(100vh * 41 / 1080);
-}
-footer p{
-    display: inline;
-    margin: 0;
-    font-size: calc(100vw * 30 / 1920);
+    display: none;
 }
