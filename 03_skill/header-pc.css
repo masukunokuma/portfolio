@@ -13,6 +13,8 @@ header{
     left: calc(100vw * 15 / 1080);
     width: calc(100vw * 1870 / 1920);
     height: calc(100vh * 100 / 1080);
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: calc(100vw * 10 / 1920);
 }
 header div{
     display: flex;
@@ -62,19 +64,12 @@ header div ul li {
     list-style: none;
     height: calc(100vh * 50 / 1080);
     color: black;
-    background: white;
     display: flex; /* li要素をフレックスボックスとして表示 */
     align-items: center; /* li要素内の要素を縦方向に中央揃え */
 }
 
-header div ul li:hover {
-    color: white;
-    background: black;
-}
-
 header div ul li a{
     color: black;
-    background-color: white;
     height: calc(100vh * 50 / 1080);
     width: calc(100vw * 325 / 1920);
     text-decoration: none;
@@ -87,4 +82,9 @@ header div ul li a{
 header div ul li a:hover {
     color: white;
     background-color: black;
+    letter-spacing: calc(100vw * 3 / 1920);
+}
+
+.hamburger-menu{
+    display: none;
 }

@@ -67,11 +67,6 @@ header div ul li {
     align-items: center; /* li要素内の要素を縦方向に中央揃え */
 }
 
-header div ul li:hover {
-    color: white;
-    background: black;
-}
-
 header div ul li a{
     color: black;
     background-color: white;
@@ -83,12 +78,11 @@ header div ul li a{
     transition: 0.5s ease;
 }
 
-/* リンクのホバー時のスタイル */
 header div ul li a:hover {
     color: white;
     background-color: black;
+    letter-spacing: calc(100vw * 3 / 1920);
 }
-
 #bear{
     position: absolute;
     z-index: -999;

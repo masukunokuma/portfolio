@@ -6,17 +6,23 @@
     <title>portfolio-skill</title>
     <link rel="stylesheet" href="https://use.typekit.net/sdj8nln.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="skill.css">
+    <link rel="stylesheet" href="skill-pc.css" media="screen and (min-width: 1024px)">
+    <link rel="stylesheet" href="skill-mobile.css" media="screen and (max-width: 1023px)">
+    <link rel="stylesheet" href="wave.css">
+    <link rel="stylesheet" href="wave-anime.css">
     <link rel="stylesheet" href="header-pc.css" media="screen and (min-width: 1024px)">
-    <script src="skill.js"></script>
+    <link rel="stylesheet" href="header-mobile.css" media="screen and (max-width: 1023px)">
+    <link rel="stylesheet" href="menu.css">
+    <script src="skill-pc.js" defer media="screen and (min-width: 1024px)"></script>
+    <script src="skill-mobile.js" defer media="screen and (max-width: 1023px)"></script>
 </head>
 <body>
     <header>
         <a href="top.html" class="headerIcon"><img src="img/icon_01.png" alt="icon"></a>
-        <p>
+        <p class="bun">
             <span>WEB DESIGN LAST ASSIGNMENT - PORTFOLIO.</span>
         </p>
-        <div>
+        <div class="headerdiv">
             <ul class="about">
                 <li><a href="top.html">　TOP</a></li>
                 <li><a href="about.html">　ABOUT</a></li>
@@ -26,7 +32,35 @@
                 <li><a href="work.html">　WORK</a></li>
             </ul>
         </div>
+        <div class="hamburger-menu">
+            <input type="checkbox" id="menu-btn-check">
+            <label for="menu-btn-check" class="menu-btn"><span></span></label>
+            <div class="menu-content">
+                <ul>
+                    <li>
+                        <a href="./01_top/top.html" class="link-action">TOP</a>
+                        <p>トップページ</p>
+                    </li>
+                    <span></span>
+                    <li>
+                        <a href="about.html" class="link-action">ABOUT</a>
+                        <p>自分について</p>
+                    </li>
+                    <span></span>
+                    <li>
+                        <a href="skill.html" class="link-action">SKILL</a>
+                        <p>扱える技術</p>
+                    </li>
+                    <span></span>
+                    <li>
+                        <a href="work.html" class="link-action">WORK</a>
+                        <p>作品</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </header>
+
     <section class="main">
         <div class="title">
             <h2>
@@ -43,9 +77,26 @@
             <div class="lower box">
                 <span class="Ai">Ai</span>
                 <span class="Ps">Ps</span>
-                <span class="web">Web</span>
+                <span class="Web">Web</span>
             </div>
         </div>
     </section>
+    <div class="water" style="z-index: -999;">
+        <div class="OutWater"></div>
+        <div>
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(0,0,0,0.7" />
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(0,0,0,0.5)" />
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(0,0,0,0.3)" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="rgb(0,0,0)" />
+                </g>
+            </svg>
+        </div>
+    </div>
+    <div class="black"></div>
 </body>
 </html>
