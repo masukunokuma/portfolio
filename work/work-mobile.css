@@ -147,11 +147,14 @@ html{
     margin-top: calc(100vw * 200 / 1920);
 }
 .work p{
+    position: relative;
     text-transform: uppercase;
     font-size: calc(100vw * 20 / 375);
     font-weight: 900;
+    /* left: calc(100vw * 200 / 1920); */
     color: black;
     margin: 0;
+    margin-top: 1vh;
 }
 .work span{
     width: 100%;
@@ -229,7 +232,7 @@ html{
 .work .second p{
     display: flex;
     position: relative;
-    left: calc(100vw * 200 / 1920);
+    /* left: calc(100vw * 200 / 1920); */
     font-size: calc(100vw * 30 /375);
 }
 .work .second::before{
@@ -242,4 +245,8 @@ html{
     border: 1px solid black;
     rotate: 30deg;
     z-index: -1;
+}
+.work .moji .period{
+    margin-top: 1vh;
+    font-size: calc(100vw * 12 / 375);
 }
