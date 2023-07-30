@@ -8,7 +8,7 @@ const Web = document.querySelector('.Web');
 
 
 // Pr
-Pr.addEventListener("click", () => {
+Pr.addEventListener("mouseover", () => {
     water.classList.add('active-Pr');
 })
 Pr.addEventListener("mouseleave", () => {
@@ -16,7 +16,7 @@ Pr.addEventListener("mouseleave", () => {
 })
 
 // Ae
-Ae.addEventListener("click", () => {
+Ae.addEventListener("mouseover", () => {
     water.classList.add('active-Ae');
 })
 Ae.addEventListener("mouseleave", () => {
@@ -24,7 +24,7 @@ Ae.addEventListener("mouseleave", () => {
 })
 
 // Maya
-Maya.addEventListener("click", () => {
+Maya.addEventListener("mouseover", () => {
     water.classList.add('active-Maya');
 })
 Maya.addEventListener("mouseleave", () => {
@@ -32,7 +32,7 @@ Maya.addEventListener("mouseleave", () => {
 })
 
 // Ai
-Ai.addEventListener("click", () => {
+Ai.addEventListener("mouseover", () => {
     water.classList.add('active-Ai');
 })
 Ai.addEventListener("mouseleave", () => {
@@ -40,7 +40,7 @@ Ai.addEventListener("mouseleave", () => {
 })
 
 // Ps
-Ps.addEventListener("click", () => {
+Ps.addEventListener("mouseover", () => {
     water.classList.add('active-Ps');
 })
 Ps.addEventListener("mouseleave", () => {
@@ -48,7 +48,7 @@ Ps.addEventListener("mouseleave", () => {
 })
 
 // Web
-Web.addEventListener("click", () => {
+Web.addEventListener("mouseover", () => {
     water.classList.add('active-Web');
 })
 Web.addEventListener("mouseleave", () => {

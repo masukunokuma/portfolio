@@ -2,7 +2,7 @@
     display: none;
 }
 .hamburger-menu{
-    position: absolute;
+    position: sticky;
     height: 0;
     top: calc(100vw * 10 / 375);
     z-index: 70;

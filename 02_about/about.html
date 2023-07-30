@@ -6,42 +6,82 @@
     <title>Portfolio.</title>
     <link rel="stylesheet" href="https://use.typekit.net/sdj8nln.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="about-pc.css">
+    <link rel="stylesheet" href="header-pc.css" media="screen and (min-width: 1024px)">
+    <link rel="stylesheet" href="header-mobile.css" media="screen and (max-width: 1023px)">
+    <link rel="stylesheet" href="menu.css">
 </head>
 <body>
     <header>
-        <img src="" alt="icon">
-        <p>
+        <a href="top.html" class="headerIcon"><img src="img/icon_01.png" alt="icon"></a>
+        <p class="bun">
             <span>WEB DESIGN LAST ASSIGNMENT - PORTFOLIO.</span>
         </p>
-        <div>
+        <div class="headerdiv">
             <ul class="about">
-                <li><a href="about.html" style="font-weight: 800;">PAGE TOP</a></li>
-                <li><a href="top.html">TOP</a></li>
+                <li><a href="top.html">　TOP</a></li>
+                <li><a href="about.html">　ABOUT</a></li>
             </ul>
             <ul class="ability">
-                <li><a href="skill.html">SKILL</a></li>
-                <li><a href="work.html">WORK</a></li>
+                <li><a href="skill.html">　SKILL</a></li>
+                <li><a href="work.html">　WORK</a></li>
             </ul>
         </div>
+        <div class="hamburger-menu">
+            <input type="checkbox" id="menu-btn-check">
+            <label for="menu-btn-check" class="menu-btn"><span></span></label>
+            <div class="menu-content">
+                <ul>
+                    <li>
+                        <a href="./01_top/top.html" class="link-action">TOP</a>
+                        <p>トップページ</p>
+                    </li>
+                    <span></span>
+                    <li>
+                        <a href="about.html" class="link-action">ABOUT</a>
+                        <p>自分について</p>
+                    </li>
+                    <span></span>
+                    <li>
+                        <a href="skill.html" class="link-action">SKILL</a>
+                        <p>扱える技術</p>
+                    </li>
+                    <span></span>
+                    <li>
+                        <a href="work.html" class="link-action">WORK</a>
+                        <p>作品</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </header>
-    <section class="main">
-        <div class="left-upper title">
-            <h2><span>ABOUT</span></h2>
-            <h3>自分について</h3>
-        </div>
-        <div class="right-upper">
-            <span>IN<br>NAGOYA</span>
-        </div>
-        <div class="left-lower">
-            <span>IN<br>2023</span>
-        </div>
-        <div class="right-lower title">
-            <h2><span>FUTURE</span></h2>
-            <h3>将来のこと</h3>
+    <section class="pagetop">
+        <div class="main">
+            <div class="upper">
+                <div class="left title">
+                    <h2><span>ABOUT</span></h2>
+                    <h3>自分について</h3>
+                </div>
+                <span class="right">NAGOYA<br>IN</span>
+            </div>
+            <div class="mid">
+                <h1 class="catch">
+                    A CREATOR<br>
+                    WHO WILL ABSOLUTELY<br>
+                    BRIGHTEN THE FUTURE
+                </h1>
+                <span id="bear"><img src="img/bear.svg" alt=""></span>
+            </div>
+            <div class="lower">
+                <span class="left">IN<br>2023</span>
+                <div class="right title">
+                    <h3>将来のこと</h3>
+                    <h2><span>FUTURE</span></h2>
+                </div>
+            </div>
         </div>
     </section>
+    
 <!-- Code injected by live-server -->
 <script>
 	// <![CDATA[  <-- For SVG support
