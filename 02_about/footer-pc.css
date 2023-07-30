@@ -1,4 +1,5 @@
 footer{
+    margin-top: calc(100vw * 200 / 1920);
     display: flex;
     position: relative;
     height: calc(100vh * 130 /1080);
@@ -76,7 +77,7 @@ footer .right li{
     display: grid;
     position: relative;
     height: 100%;
-    /* width: 3vw; */
+    width: 3vw;
     align-items: center;
 }
 footer .right li a{
