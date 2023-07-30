@@ -160,8 +160,8 @@ html{
     border: calc(100vw * 5 / 1920) solid #242424;
     border-radius: calc(100vw * 10 / 1920);
     padding: calc(100vw * 50 / 1920) calc(100vw * 250 / 1920);
-    background-color: #111;
-    color: #fff;
+    background-color: black;
+    color: white;
     font-size: calc(100vw * 50 / 1920);
     position: relative;
     text-decoration: none;

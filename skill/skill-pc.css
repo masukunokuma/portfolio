@@ -14,12 +14,12 @@
     display: flex;
     margin: 0;
     height: calc(100vh * 90 / 1080);
-    font-weight: 700;
+    font-weight: 900;
     align-items: center;
 }
 .main .up{
     display: block;
-    font-size: calc(100vh * 75 / 1080);
+    font-size: calc(100vw * 75 / 1920);
     color: #707070;
     letter-spacing: calc(100vw * -3.75 / 1920);
 }
@@ -35,33 +35,33 @@
 .skill{
     display: grid;
     position: relative;
-    top: 10vh;
-    width: calc(100vw * 355 / 375);
-    left: calc(100vw * 10 / 375);
+    top: calc(100vh * 100 / 1080);
+    width: calc(100vw * 1780 / 1920);
+    left: calc(100vw * 70 / 1920);
     justify-content: center;
     align-items: center;
     gap: calc(100vh * 25 / 1080);
 }
 .skill .box{
     display: flex;
-    width: calc(100vw * 330 / 375);
+    width: calc(100vw * 1100 / 1920);
     justify-content: space-between;
 }
 .skill .upper{
     position: relative;
-    left: calc(100vw * -12 / 375);
+    left: calc(100vw * -112 / 1920);
 }
 .skill .lower{
     position: relative;
-    right: calc(100vw * -12 / 375);
+    right: calc(100vw * -112 / 1920);
 }
 .skill span{
     display: flex;
     margin: 0;
-    width: calc(100vh * 90 / 667);
-    height: calc(100vh * 90 / 667);
-    font-size: calc(100vh * 40 / 1080);
-    font-weight: 900;
+    width: calc(100vw * 230 / 1920);
+    height: calc(100vw * 230 / 1920);
+    font-size: calc(100vh * 50 / 1080);
+    font-weight: 800;
     justify-content: center;
     align-items: center;
     /* border: 1px solid; */
@@ -70,9 +70,10 @@
     background: rgba(50, 50, 50, 0.5
     );
     transition: 0.5s ease;
+    animation-delay: 0.2s;
 }
 .skill span:hover{
     color: black;
-    font-size: calc(100vh * 50 / 1080);
+    font-size: calc(100vh * 60 / 1080);
     background: white;
 }

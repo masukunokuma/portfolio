@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio.</title>
     <link rel="stylesheet" href="https://use.typekit.net/sdj8nln.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="work-pc.css" media="screen and (min-width: 1024px)">
-    <link rel="stylesheet" href="work-mobile.css" media="screen and (max-width: 1023px)">
-    <link rel="stylesheet" href="header-pc.css" media="screen and (min-width: 1024px)">
-    <link rel="stylesheet" href="header-mobile.css" media="screen and (max-width: 1023px)">
-    <link rel="stylesheet" href="footer-pc.css" media="screen and (min-width: 1024px)">
-    <link rel="stylesheet" href="footer-mobile.css" media="screen and (max-width: 1023px)">
-    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="about/style.css">
+    <link rel="stylesheet" href="about/about-pc.css" media="screen and (min-width: 1024px)">
+    <link rel="stylesheet" href="about/about-moblie.css" media="screen and (max-width: 1023px)">
+    <link rel="stylesheet" href="about/header-pc.css" media="screen and (min-width: 1024px)">
+    <link rel="stylesheet" href="about/header-mobile.css" media="screen and (max-width: 1023px)">
+    <link rel="stylesheet" href="about/footer-pc.css" media="screen and (min-width: 1024px)">
+    <link rel="stylesheet" href="about/footer-mobile.css" media="screen and (max-width: 1023px)">
+    <link rel="stylesheet" href="about/menu.css">
+    <link rel="stylesheet" href="all_general/load.css">
+    <script src="all_general/sys.js" defer></script>
 </head>
 <body>
     <header>
@@ -36,7 +38,7 @@
             <div class="menu-content">
                 <ul>
                     <li>
-                        <a href="./01_top/top.html" class="link-action">HOME</a>
+                        <a href="top.html" class="link-action">HOME</a>
                         <p>トップページ</p>
                     </li>
                     <span></span>
@@ -63,8 +65,8 @@
         <div class="main">
             <div class="upper">
                 <div class="left title">
-                    <h2><span>WORK</span></h2>
-                    <h3>作品</h3>
+                    <h2><span>ABOUT</span></h2>
+                    <h3>自分について</h3>
                 </div>
                 <span class="right">NAGOYA<br>IN</span>
             </div>
@@ -78,10 +80,14 @@
             </div>
             <div class="lower">
                 <span class="left">IN<br>2023</span>
+                <div class="right title">
+                    <h3>将来のこと</h3>
+                    <h2><span>FUTURE</span></h2>
+                </div>
             </div>
         </div>
     </section>
-    <section class="span">
+    <section class="span elm">
         <p class="left">
             RESPONSIBLE FOR<br>
             FUTURE SOCIETY.<br>
@@ -94,14 +100,14 @@
         </p>
     </section>
     <section class="profile">
-        <h4>MY PROFILE</h4>
+        <h4 class="elm">MY PROFILE</h4>
         <div>
-            <p class="left">
+            <p class="left elm">
                 name : kumagawa itto<br>
                 Affiliation : team ai<br>
                 age : 20
             </p>
-            <p class="right">
+            <p class="right elm">
                 はじめまして、熊川偉斗と申します。<br>
                 <span></span><br>
                 私は映画やテレビ番組、SNSなど、様々なメディアに<br>
@@ -118,12 +124,12 @@
                 どうぞよろしくお願いいたします。
             </p>
         </div>
-        <div class="href">
+        <div class="href elm">
             <a class="link-button" href="skill.html">skill</a>
             <a class="link-button" href="work.html">work</a>
         </div>
     </section>
-    <footer>
+    <footer class="elm">
         <div class="left">
             <span class="footerIcon"><img src="img/icon_01.png" alt=""></span>
             <div class="mini">
@@ -145,43 +151,5 @@
             </li>
         </div>
     </footer>
-<!-- Code injected by live-server -->
-<script>
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
-</script>
 </body>
 </html>

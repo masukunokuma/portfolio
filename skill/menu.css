@@ -57,7 +57,7 @@
     left: -95vw;/*leftの値を変更してメニューを画面外へ*/
     opacity: 0;
     z-index: -100;
-    background-color: white;
+    background-image: linear-gradient(to right, white, transparent);
     transition: all 0.5s ease;
 }
 #menu-btn-check:checked ~ .menu-content {

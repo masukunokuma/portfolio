@@ -67,7 +67,8 @@ html{
     margin: 0;
     /* height: calc(100vh * 465 / 1080); */
 
-    font-size: calc(100vh * 100 / 1080);
+    font-size: calc(100vh * 200 / 1080);
+    letter-spacing: 10px;
     font-weight: 900;
     color: white;
     text-shadow:
@@ -108,12 +109,12 @@ html{
     text-align: end;
 }
 
-.profile{
+.work{
     position: relative;
-    padding-left: 3.1vw;
-    padding-right: 3.1vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
 }
-.profile h4{
+.work h4{
     display: flex;
     position: relative;
     
@@ -127,41 +128,53 @@ html{
     height: calc(100vw * 35 / 1920);
     background: black;
     border-radius: 100px;
+    left: -6.9vw;
 }
-.profile div{
-    display: flex;
-    position: relative;
-    justify-content: space-between;
+.work h3{  
+    font-size: calc(100vw * 90 / 1920);
+    font-weight: 900;
+    color: white;
+    text-shadow:
+    2px 2px 1px black, -2px -2px 1px black,
+    -2px 2px 1px black,  2px -2px 1px black,
+     2px 0px 1px black, -2px  0px 1px black,
+     0px 2px 1px black,  0px -2px 1px black;;
+     word-spacing: calc(100vw * 25 / 1920);
+     text-transform: uppercase;
+    margin: 0;
+    margin-top: calc(100vw * 200 / 1920);
 }
-.profile div .left{
+.work p{
     text-transform: uppercase;
     font-size: calc(100vw * 50 / 1920);
     font-weight: 900;
     color: black;
+    margin: 0;
 }
-.profile div .right{
-    padding: calc(100vw * 15 / 1920);
-    margin-right: calc(100vw * 100 / 1920);
-    font-size: calc(100vw * 32 / 1920);
-    font-family: "Hiragino Mincho ProN", serif;
-    line-height: calc(100vw * 45 / 1920);
-    letter-spacing: 1px;
-    border-radius: calc(100vw * 10 / 1920);
-    box-shadow: calc(100vw * 20 / 1920) calc(100vw * 25 / 1920) 50px rgba(0, 0, 0, 0.3) ;
-}
-
-.profile .href{
+.work span{
+    width: 100%;
     display: flex;
-    margin-top: calc(100vw * 50 / 1920);
-    justify-content: space-evenly;
+    justify-content: center;
 }
-.profile .link-button {
+.work span .video-container {
+    display: flex;
+    position: relative;
+    border: 15px solid #ccc; /* 枠のスタイルを設定 */
+    border-radius: calc(100vw * 40 / 1920);
+    margin: 5vh 0;
+}
+.work span .video-container video{
+    border-radius: calc(100vw * 20 / 1920);
+    object-fit: cover;
+    height: 50vh;
+}
+.work span a {
     display: inline-block;
-    border: calc(100vw * 5 / 1920) solid #242424;
+    /* border: calc(100vw * 5 / 1920) solid #242424; */
     border-radius: calc(100vw * 10 / 1920);
-    padding: calc(100vw * 50 / 1920) calc(100vw * 250 / 1920);
-    background-color: #111;
-    color: #fff;
+    padding: calc(100vw * 30 / 1920) calc(100vw * 150 / 1920);
+    background-color: white;
+    color: black;
     font-size: calc(100vw * 50 / 1920);
     position: relative;
     text-decoration: none;
@@ -169,20 +182,60 @@ html{
     overflow: hidden;
 }  
   /* 矢印の装飾用の疑似要素を追加 */
-.profile .link-button::after {
+.work span a::after {
     content: "";
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
-    left: 100%; /* 矢印の元位置を設定 */
-    width: 100%;
-    background-color: #ffffff;
+    left: 107%; /* 矢印の元位置を設定 */
+    width: 200%;
+    height: 200%;
+    background-color: white;
+    border-radius: calc(100vw * 10 / 1920);
     transform: skewX(45deg); /* 斜めに回転させる */
-    transition: left 0.3s; /* アニメーションを追加 */
+    transition: left 0.2s; /* アニメーションを追加 */
     mix-blend-mode: difference; /* 色の反転を有効にする */
 }
   /* マウスホバー時に矢印を表示 */
-.link-button:hover::after {
+.work span a:hover::after {
     left: 0;
+}
+
+
+.work .first{
+    /* display: flex; */
+    position: relative;
+    justify-content: space-between;
+}
+.work .first::before{
+    top: calc(100vw * -100 / 1920);
+    position: absolute;
+    content: "";
+    width: calc(100vw * 500 / 1920);
+    height: calc(100vw * 500 / 1920);
+    border: 1px solid black;
+    rotate: 30deg;
+    z-index: -1;
+}
+.work .second{
+    /* display: flex; */
+    position: relative;
+    justify-content: space-between;
+}
+.work .second p{
+    display: flex;
+    position: relative;
+    left: calc(100vw * 200 / 1920);
+    font-size: calc(100vw * 60 /1920);
+}
+.work .second::before{
+    top: calc(100vw * -100 / 1920);
+    position: absolute;
+    content: "";
+    width: calc(100vw * 500 / 1920);
+    height: calc(100vw * 500 / 1920);
+    border: 1px solid black;
+    rotate: 30deg;
+    z-index: -1;
 }
