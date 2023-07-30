@@ -1,13 +1,16 @@
 header{
+    z-index: 999;
     display: flex;
     position: sticky;
     top: calc(100vh * 30 / 1920);
     left: calc(100vw * 15 / 1080);
     width: calc(100vw * 1870 / 1920);
     height: calc(100vh * 100 / 1080);
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.7);
     border-radius: calc(100vw * 10 / 1920);
     color: #242424;
+
+    overflow-y: scroll;
 }
 header div{
     display: flex;
@@ -15,6 +18,7 @@ header div{
 
 header .headerIcon{
     display: flex;
+    position: sticky;
     width: calc(100vw * 100 / 1920);
     height: calc(100vh * 100 / 1080);
     justify-content: center;
